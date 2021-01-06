@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box; }
+
+.text-modifier {
+  display: inline-block;
+  color: #40514e;
+  text-transform: uppercase;
+  transition: all .2s; }
+  .text-modifier:hover {
+    transform: rotate(10deg); }
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #fff;
+  margin: 5rem 5rem;
+  padding: 1.5rem 3.5rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: #e4f9f5;
+  transition: all .2s; }
+  .btn:link:hover,
+  .btn:visited:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn--nav:link,
+.btn--nav:visited {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #e4f9f5;
+  padding: 1.5rem 3rem;
+  margin: 7rem 4.8rem;
+  font-size: 1.6rem;
+  border-radius: 1.1rem;
+  transition: all .2s;
+  color: #e4f9f5; }
+  .btn--nav:link:hover,
+  .btn--nav:visited:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.navigation__nav {
+  display: flex;
+  justify-content: flex-end; }
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../img/header.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.header-box {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .header-box__heading {
+    font-size: 7rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.1rem; }
+  .header-box__sub {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 2.5rem 0rem;
+    color: #fff; }
+  .header-box__img {
+    border-radius: 100%;
+    width: 10%;
+    height: 10%;
+    margin: 2.5rem 0rem; }
+  .header-box hr {
+    width: 25%;
+    margin: 0 auto;
+    color: #fff; }

@@ -1,0 +1,10 @@
+.text-modifier {
+    display: inline-block;
+    color: $color-dark-2;
+    text-transform: uppercase;
+    transition: all .2s;
+
+    &:hover {
+        transform: rotate(10deg);
+    }
+}
