@@ -1,0 +1,58 @@
+.section-about {
+    background-color: $color-light-grey;
+}
+
+.about {
+
+    display: flex;
+    justify-content: space-evenly;
+    
+    &__heading {
+        font-size: 4.8rem;
+        font-weight: 700;
+        color: $color-primary;
+    }
+
+    &__description {
+        font-size: 2rem;
+        font-weight: 500;
+        width: 40%;
+        color: $color-primary;
+    }
+}
+
+.section-tech {
+    background-color: $color-light-grey;
+
+    &__title {
+        font-size: 3.6rem;
+        font-weight: 500;
+        color: $color-primary;
+    }
+}
+
+.skillset {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem 0rem;
+
+    &__item {
+        font-size: 1.2rem;
+        border: 1px solid $color-dark-blue;
+        border-radius: 10rem;
+        margin: 2rem 1.8rem;
+        padding: 1rem 4rem;
+
+        &:hover {
+            opacity: 0.75;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}

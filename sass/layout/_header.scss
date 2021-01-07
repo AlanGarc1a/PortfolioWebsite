@@ -1,10 +1,8 @@
 .header {
-    height: 100vh;
-    width: 100vw;
+    height: 95vh;
     background-image: url("../../img/header.jpg");
     background-size: cover;
     background-position: top;
-    background-repeat: no-repeat;
 
     position: relative;
 }
@@ -20,9 +18,16 @@
     &__heading {
         font-size: 7rem;
         font-weight: 700;
-        color: $color-white;
+        color: $color-primary;
         text-transform: uppercase;
         letter-spacing: 1.1rem;
+
+        &--main {
+            display: block;
+            animation-name: movefromBelow;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+        }
     }
 
     &__sub {
@@ -30,7 +35,7 @@
         font-weight: 500;
         margin: 2.5rem 0rem;
 
-        color: $color-white;
+        color: $color-primary;
     }
 
     &__img {
@@ -43,6 +48,6 @@
     hr {
         width: 25%;
         margin: 0 auto;
-        color: $color-white;
+        color: $color-primary;
     }
 }

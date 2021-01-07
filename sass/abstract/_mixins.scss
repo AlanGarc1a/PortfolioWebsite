@@ -1,0 +1,4 @@
+@mixin clickedButton {
+    transform: translate(-2px);
+    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
