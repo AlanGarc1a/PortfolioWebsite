@@ -22,3 +22,11 @@
     padding-top: 5rem;
     color: $color-light-grey;
 }
+
+.text-link {
+    text-decoration: none;
+
+    &:visited {
+        color: $color-white;
+    }
+}

@@ -54,9 +54,58 @@
     &__icon {
         width: 1.8rem;
         height: 1.8rem;
+        margin: auto right;
     }
 }
 
 .section-tech {
     background-color: $color-dark-blue;
+}
+
+.project-container {
+    margin-top: 10rem;
+}
+
+.featured-project {
+    display: flex;
+    justify-content: center;
+
+    &__img {
+
+        &--1 {
+            width: 25%;
+            height: 25%;
+            border-radius: 2px;
+        }
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: $color-white;
+        margin-bottom: 2.5rem;
+    }
+
+    &__box {
+        width: 50rem;
+        background-color: $color-primary;
+        border-radius: 2px;
+        padding: 1.2rem 3rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        color: $color-light-grey;
+    }
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &__item {
+        font-size: 1.6rem;
+        color: $color-light-grey;
+        margin: 2.5rem 1rem;
+    }
 }

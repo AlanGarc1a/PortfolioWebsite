@@ -39,11 +39,25 @@ body {
   padding-top: 5rem;
   color: #e8eae6; }
 
+.text-link {
+  text-decoration: none; }
+  .text-link:visited {
+    color: #fff; }
+
 .u-padding-top {
   padding-top: 20rem; }
 
 .u-padding-bottom {
   padding-bottom: 10rem; }
+
+.u-margin-top {
+  margin-top: 7.5rem; }
+
+.u-margin-left {
+  margin-left: 10rem; }
+
+.u-margin-bottom {
+  margin-bottom: 10rem; }
 
 .u-text-align-center {
   text-align: center; }
@@ -174,7 +188,39 @@ body {
       cursor: pointer; }
   .skillset__icon {
     width: 1.8rem;
-    height: 1.8rem; }
+    height: 1.8rem;
+    margin: auto right; }
 
 .section-tech {
   background-color: #1b1b2f; }
+
+.project-container {
+  margin-top: 10rem; }
+
+.featured-project {
+  display: flex;
+  justify-content: center; }
+  .featured-project__img--1 {
+    width: 25%;
+    height: 25%;
+    border-radius: 2px; }
+  .featured-project__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2.5rem; }
+  .featured-project__box {
+    width: 50rem;
+    background-color: #162447;
+    border-radius: 2px;
+    padding: 1.2rem 3rem; }
+  .featured-project__description {
+    font-size: 1.6rem;
+    color: #e8eae6; }
+  .featured-project__list {
+    display: flex;
+    list-style-type: none; }
+  .featured-project__item {
+    font-size: 1.6rem;
+    color: #e8eae6;
+    margin: 2.5rem 1rem; }
