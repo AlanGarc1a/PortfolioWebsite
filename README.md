@@ -9,7 +9,7 @@ I did not like it that much and decided to make another using just HTML5 and CSS
 
 # Tech/framework used
 
-- Built with:
+Built with:
 
 * HTML5
 * CSS3(Sass)

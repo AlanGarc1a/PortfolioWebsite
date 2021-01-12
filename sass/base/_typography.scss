@@ -7,6 +7,19 @@
     &:hover {
         transform: rotate(6deg);
     }
+
+    &--white {
+        color: $color-white;
+        margin-left: 2rem;
+
+        display: inline-block;
+        text-transform: uppercase;
+        transition: all .2s;
+
+        &:hover {
+            transform: rotate(6deg);
+        }
+    }
 }
 
 .paragraph {

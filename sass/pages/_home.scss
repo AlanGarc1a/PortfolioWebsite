@@ -109,3 +109,80 @@
         margin: 2.5rem 1rem;
     }
 }
+
+.section-contact {
+    background-color: $color-white;
+
+    hr {
+         width: 40%;
+         margin: 0 auto;
+         margin-top: 4rem;
+    }
+}
+
+.info {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+
+    &__emailbox {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    &__emaillink {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 500;
+        
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-secondary;
+        }
+    }
+
+    &__heading {
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: $color-primary;
+        margin-right: 5rem;
+    }
+
+    &__paragraph {
+        font-size: 2.4rem;
+        width: 35%;
+        margin-left: 5rem;
+    }
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 2rem;
+
+    @include removeListBullets;
+
+    &__item {
+        font-size: 1.8rem;
+        margin-right: 8.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &__link {
+        color: $color-primary;
+
+        &:visited,
+        &:link {
+            text-decoration: none;
+        }
+    }
+
+    &__icon {
+        width: 2.1rem;
+        height: 2.1rem;
+        margin-right: 1rem;
+    }
+}

@@ -44,3 +44,13 @@
         @include clickedButton;
     }
 }
+
+.info-btn {
+    display: inline-block;
+    font-size: 1.6rem;
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+}
