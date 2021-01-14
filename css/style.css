@@ -16,6 +16,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -75,43 +78,24 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  border: 2px solid #162447;
   margin: 5rem 5rem;
-  padding: 1.5rem 3.5rem;
+  padding: 1.3rem 2.5rem;
   border-radius: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
-  color: #162447;
-  transition: all .2s; }
-  .btn:link:hover,
-  .btn:visited:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:link:active,
-  .btn:visited:active {
-    transform: translate(-2px);
-    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  color: #fff; }
 
 .btn--nav:link,
 .btn--nav:visited {
   text-decoration: none;
   display: inline-block;
-  border: 2px solid #1f4068;
-  padding: 1.5rem 3rem;
-  margin: 7rem 4.8rem;
-  font-size: 1.6rem;
+  padding: 1.3rem 2.5rem;
+  margin: 7rem 3rem;
+  font-size: 1.8rem;
   font-weight: 500;
   border-radius: 1.1rem;
   transition: all .2s;
   color: #162447; }
-  .btn--nav:link:hover,
-  .btn--nav:visited:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn--nav:link:active,
-  .btn--nav:visited:active {
-    transform: translate(-2px);
-    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2); }
 
 .info-btn {
   display: inline-block;
@@ -127,34 +111,28 @@ body {
   height: 95vh;
   background-image: url("../../img/header.jpg");
   background-size: cover;
-  background-position: top;
-  position: relative; }
+  background-position: top; }
 
 .header-box {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem; }
   .header-box__heading {
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 700;
     color: #162447;
     text-transform: uppercase;
     letter-spacing: 1.1rem; }
-    .header-box__heading--main {
-      display: block;
-      animation-name: movefromBelow;
-      animation-duration: 1.5s;
-      animation-timing-function: ease-in; }
   .header-box__sub {
-    font-size: 2.2rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin: 2.5rem 0rem;
     color: #162447; }
   .header-box__img {
+    display: inline-block;
     border-radius: 100%;
-    width: 10%;
+    width: 5%;
     height: 10%;
     margin: 2.5rem 0rem; }
   .header-box hr {
