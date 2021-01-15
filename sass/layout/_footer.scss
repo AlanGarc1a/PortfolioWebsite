@@ -5,6 +5,11 @@
 
     padding-top: 6rem;
     padding-bottom: 5rem;
+
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer-box {
@@ -13,6 +18,10 @@
         font-size: 2.5rem;
         font-weight: 700;
         color: $color-white;
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
     }
     
     &__copyright {
@@ -22,5 +31,12 @@
         display: flex;
         justify-content: center;
         margin-top: 2.5rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
     }
 }
