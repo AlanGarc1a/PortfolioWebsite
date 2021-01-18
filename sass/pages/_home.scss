@@ -91,12 +91,23 @@
     display: flex;
     justify-content: center;
 
-    &__img {
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+    }
 
-        &--1 {
-            width: 25%;
-            height: 25%;
-            border-radius: 2px;
+    @include respond(tab-land) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        width: 25%;
+        height: 25%;
+        border-radius: 3px;
+        @include respond(tab-port) {
+            margin-bottom: 5rem;
+            width: 50%;
         }
     }
 
@@ -112,6 +123,10 @@
         background-color: $color-primary;
         border-radius: 2px;
         padding: 1.2rem 3rem;
+
+        @include respond(tab-port) {
+            margin-top: 5rem;
+        }
     }
 
     &__description {
