@@ -9,8 +9,9 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 18rem;
+    padding-top: 35rem;
 
     &__heading {
         font-size: 5rem;

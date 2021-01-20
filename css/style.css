@@ -119,8 +119,9 @@ body {
 .header-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 18rem; }
+  padding-top: 35rem; }
   .header-box__heading {
     font-size: 5rem;
     font-weight: 700;
@@ -231,9 +232,11 @@ body {
 .skillset {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding: 5rem 0rem; }
   .skillset__item {
+    display: inline-block;
     font-size: 1.2rem;
     border: 1px solid #1b1b2f;
     border-radius: 10rem;
@@ -286,7 +289,9 @@ body {
     padding: 1.2rem 3rem; }
     @media (max-width: 56.25em) {
       .featured-project__box {
-        margin-top: 5rem; } }
+        margin-top: 5rem;
+        width: 40rem;
+        margin-right: 8rem; } }
   .featured-project__description {
     font-size: 1.6rem;
     color: #e8eae6; }

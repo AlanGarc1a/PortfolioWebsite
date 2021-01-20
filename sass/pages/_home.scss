@@ -54,10 +54,12 @@
 .skillset {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     padding: 5rem 0rem;
 
     &__item {
+        display: inline-block;
         font-size: 1.2rem;
         border: 1px solid $color-dark-blue;
         border-radius: 10rem;
@@ -126,6 +128,8 @@
 
         @include respond(tab-port) {
             margin-top: 5rem;
+            width: 40rem;
+            margin-right: 8rem;
         }
     }
 
