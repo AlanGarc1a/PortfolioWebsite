@@ -21,6 +21,7 @@
 
         @include respond(phone) {
             font-size: 2rem;
+            padding: 1rem 1rem;
         }
     }
     

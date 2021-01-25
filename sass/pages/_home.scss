@@ -42,21 +42,39 @@
 }
 
 .section-skills {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     background-color: $color-light-grey;
 
     &__title {
         font-size: 4.8rem;
-        font-weight: 500;
+        font-weight: 700;
         color: $color-primary;
+
+        @include respond(tab-port){
+            margin-bottom: 3rem;
+        }
     }
 }
 
 .skillset {
+
+    max-width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5rem 0rem;
+
+    @include respond(tab-port){
+        max-width: 75%;
+    }
 
     &__item {
         display: inline-block;
@@ -150,6 +168,10 @@
     }
 }
 
+.second-project {
+    margin-right: 8rem;
+}
+
 .section-contact {
     background-color: $color-white;
 
@@ -219,6 +241,10 @@
 
     @include removeListBullets;
 
+    @include respond(tab-port){
+        padding-left: 5rem;
+    }
+
     &__item {
         font-size: 1.8rem;
         margin-right: 8.5rem;
@@ -227,6 +253,7 @@
 
     &__link {
         color: $color-primary;
+        margin-right: 2rem;
 
         &:visited,
         &:link {
@@ -237,6 +264,6 @@
     &__icon {
         width: 2.1rem;
         height: 2.1rem;
-        margin-right: 1rem;
+        margin-right: auto right;
     }
 }
