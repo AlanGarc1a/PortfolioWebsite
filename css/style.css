@@ -1,7 +1,9 @@
-@keyframes movefromBelow {
+@keyframes moveFromAbove {
   0% {
     opacity: 0;
-    transform: translateY(5rem); }
+    transform: translateY(-5rem); }
+  80% {
+    transform: translateY(1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -15,10 +17,10 @@
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
 
@@ -27,6 +29,10 @@ body {
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box; }
+
+::selection {
+  background-color: #162447;
+  color: #fff; }
 
 .text-modifier {
   display: inline-block;
@@ -121,23 +127,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 35rem; }
+  padding-top: 35rem;
+  backface-visibility: hidden; }
   .header-box__heading {
+    animation-name: moveFromAbove;
+    animation-duration: 1s;
+    animation-timing-function: linear;
     font-size: 5rem;
     font-weight: 700;
     color: #162447;
     text-transform: uppercase;
     letter-spacing: 1.1rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header-box__heading {
         font-size: 2.5rem; } }
   .header-box__sub {
+    animation: moveFromAbove 1s ease-in;
     font-size: 2.5rem;
     font-weight: 700;
     margin: 2.5rem 0rem;
     text-align: center;
     color: #162447; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header-box__sub {
         font-size: 2rem; } }
   .header-box__img {
@@ -146,10 +157,10 @@ body {
     width: 5%;
     height: auto;
     margin: 2.5rem 0rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header-box__img {
         width: 10%; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .header-box__img {
         width: 10%; } }
   .header-box hr {
@@ -163,7 +174,7 @@ body {
   justify-content: center;
   padding-top: 6rem;
   padding-bottom: 5rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer {
       flex-direction: column;
       align-items: center; } }
@@ -172,7 +183,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   color: #fff; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer-box__quote {
       font-size: 2rem;
       padding: 1rem 1rem; } }
@@ -184,7 +195,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2.5rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer-box__copyright {
       flex-direction: column;
       justify-content: center;
@@ -197,11 +208,11 @@ body {
 .about {
   display: flex;
   justify-content: space-evenly; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .about {
       flex-direction: column;
       align-items: center; } }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .about {
       flex-direction: column;
       align-items: center; } }
@@ -214,11 +225,11 @@ body {
     font-weight: 500;
     width: 40%;
     color: #162447; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .about__description {
         margin-top: 6rem;
         width: 60%; } }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .about__description {
         margin-top: 6rem;
         width: 60%; } }
@@ -227,7 +238,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   background-color: #e8eae6; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-skills {
       flex-direction: column;
       align-items: center; } }
@@ -235,7 +246,7 @@ body {
     font-size: 4.8rem;
     font-weight: 700;
     color: #162447; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .section-skills__title {
         margin-bottom: 3rem; } }
 
@@ -245,7 +256,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .skillset {
       max-width: 75%; } }
   .skillset__item {
@@ -274,11 +285,11 @@ body {
 .featured-project {
   display: flex;
   justify-content: center; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .featured-project {
       flex-direction: column;
       align-items: center; } }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .featured-project {
       flex-direction: column;
       align-items: center; } }
@@ -286,7 +297,7 @@ body {
     width: 25%;
     height: 25%;
     border-radius: 3px; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .featured-project__img {
         margin-bottom: 5rem;
         width: 50%; } }
@@ -300,7 +311,7 @@ body {
     background-color: #162447;
     border-radius: 2px;
     padding: 1.2rem 3rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .featured-project__box {
         margin-top: 5rem;
         width: 40rem;
@@ -330,7 +341,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 10rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .info {
       justify-content: center;
       flex-direction: column;
@@ -351,14 +362,14 @@ body {
     font-weight: 700;
     color: #162447;
     margin-right: 5rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .info__heading {
         margin-bottom: 5rem; } }
   .info__paragraph {
     font-size: 2.4rem;
     width: 35%;
     margin-left: 5rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .info__paragraph {
         width: 50%; } }
 
@@ -367,7 +378,7 @@ body {
   justify-content: center;
   margin: 2.5rem 2rem;
   list-style-type: none; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .social-list {
       padding-left: 5rem; } }
   .social-list__item {

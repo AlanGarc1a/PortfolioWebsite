@@ -12,8 +12,12 @@
     justify-content: center;
     align-items: center;
     padding-top: 35rem;
+    backface-visibility: hidden;
 
     &__heading {
+        animation-name: moveFromAbove;
+        animation-duration: 1s;
+        animation-timing-function: linear;
         font-size: 5rem;
         font-weight: 700;
         color: $color-primary;
@@ -26,6 +30,7 @@
     }
 
     &__sub {
+        animation: moveFromAbove 1s ease-in;
         font-size: 2.5rem;
         font-weight: 700;
         margin: 2.5rem 0rem;

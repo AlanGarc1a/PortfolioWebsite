@@ -28,3 +28,8 @@ body {
     line-height: 1.7;
     box-sizing: border-box;
 }
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
