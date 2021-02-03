@@ -13,3 +13,7 @@ Built with:
 
 * HTML5
 * CSS3(Sass)
+
+# Tasks
+
+- [ ] Make the site look better on mobile devices. 
