@@ -7,28 +7,50 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/style.css">
-        
+        <link rel="shortcut icon" href="#">
+
         <title>Alan Garcia | Portfolio Website</title>
     </head>
     <body>
         <!-- HEADER -->
         <header class="header">
-            <div class="header-box">
-                    <h1 class="header-box__heading">Alan Garcia</h1> 
-                    <p class="header-box__sub">University graduate based in SoCal that likes to work on <span class="text-modifier">Full Stack</span> technologies</p>
-                    <img src="./img/profile-pic.jpg" class="header-box__img" />
-                    <hr>
-                    <div class="header-box__links">
-                        <a href="files/resume.pdf" target="_blank" class="btn">Resume</a>
-                        <a href="https://www.linkedin.com/in/alan-garcia-4b1062197/" target="_blank" class="btn">Linkedin</a>
-                        <a href="https://github.com/AlanGarc1a" target="_blank" class="btn">Github</a>
+            <!-- NAV -->
+            <div class="nav-container">
+                <nav class="navbar">
+                    <span class="navbar__logo">AG</span>
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a class="nav-link" href="files/resume.pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
                     </div>
+                </nav>
             </div>
+            <div class="heading">
+                <span class="heading__top">Hey! I am</span>
+                <h1 class="heading__main">Alan Garcia</h1>
+                <span class="heading__bottom">Front End Engineer</span>
+            </div>
+            <canvas class="webgl"></canvas>
+            <ion-icon class="header-icon" name="chevron-down-outline"></ion-icon>
         </header>
         <!-- MAIN -->
         <main>
             <!--ABOUT -->
-            <section class="section-about">
+            <section id="about" class="section-about">
                 <div class="about u-padding-top">
                     <h2 class="about__heading">
                         <span>About Me</span>
@@ -191,5 +213,9 @@
                 <p class="footer-box__copyright">&copy; Copyright 2021 <span class="text-modifier--white">Alan Garcia</span></p>
             </div>
         </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js" integrity="sha512-U4J4PbEJ2TMjFqPUSiKq7LLTHuEkPZVo0jl2fomi9pT7UAExh4xVi8KmoR7EfmyigH95aA68zpW7y3XzuoSurQ==" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
