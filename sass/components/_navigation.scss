@@ -1,7 +1,85 @@
-.navigation {
+.nav-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 3em;
+}
 
-    &__nav {
-        display: flex;
-        justify-content: flex-end;
+.navbar {
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+
+    &__logo {
+        font-size: 2.8rem;
+        color: $color-white;
+        flex-grow: 1;
     }
+}
+
+.nav-list {
+    display: flex;
+    align-self: center;
+    list-style-type: none;
+
+    &__item {
+        margin-right: 3rem;
+
+        &:last-child {
+            margin-right: 0rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    @include respond(tab-land) {
+        display: none;
+    }
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+        color: $color-white;
+    }
+}
+
+.burger {
+    align-self: center;
+    cursor: pointer;
+    display: none;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+
+    @include respond(tab-land) {
+        display: block;
+    }
+}
+
+.burger > div {
+    width: 2rem;
+    height: .2rem;
+    margin: .6rem;
+    background-color: $color-white;
+    transition: all .2s ease-in;
+}
+
+.toggle .line1 {
+    transform: rotate(45deg) translate(0rem, 1.1rem);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(-45deg) translate(0rem, -1.1rem);
 }
