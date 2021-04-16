@@ -1,65 +1,42 @@
 .header {
-    height: 95vh;
-    background: linear-gradient(180deg, rgba($color-primary, 0.8), rgba($color-aqua, 0.8));
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    &-icon {
+        position: absolute;
+        backface-visibility: hidden;
+        top: 95%;
+        left: 50%;
+        width: 5rem;
+        height: 6rem;
+        color: $color-white;
+        animation-name: drifting-up-down;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
 }
 
-.header-box {
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-light-grey;
+    text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 35rem;
-    backface-visibility: hidden;
-
-    &__heading {
-        animation-name: moveFromAbove;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        font-size: 5rem;
-        font-weight: 700;
-        color: $color-primary;
+    &__top {
+        font-size: 1.5rem;
+        font-weight: 300;
         text-transform: uppercase;
-        letter-spacing: 1.1rem;
-
-        @include respond(phone) {
-            font-size: 2.5rem;
-        }
     }
 
-    &__sub {
-        animation: moveFromAbove 1s ease-in;
+    &__main {
+        font-size: 10rem;
+        text-transform: uppercase;
+    }
+
+    &__bottom {
         font-size: 2.5rem;
-        font-weight: 700;
-        margin: 2.5rem 0rem;
-        text-align: center;
-
-        color: $color-primary;
-
-        @include respond(phone) {
-            font-size: 2rem;
-        }
-
-    }
-    
-    &__img {
-        display: inline-block;
-        border-radius: 100%;
-        width: 5%;
-        height: auto;
-        margin: 2.5rem 0rem;
-        @include respond(phone) {
-            width: 10%;
-        }
-
-        @include respond(tab-port) {
-            width: 10%;
-        }
-    }
-
-    hr {
-        width: 25%;
-        margin: 0 auto;
-        color: $color-secondary;
     }
 }
