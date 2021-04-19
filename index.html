@@ -13,14 +13,14 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header class="header">
+        <header id="home" class="header">
             <!-- NAV -->
             <div class="nav-container">
                 <nav class="navbar">
                     <span class="navbar__logo">AG</span>
                     <ul class="nav-list">
                         <li class="nav-list__item">
-                            <a class="nav-link" href="">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-list__item">
                             <a class="nav-link" href="#about">About</a>
@@ -50,160 +50,124 @@
         <!-- MAIN -->
         <main>
             <!--ABOUT -->
-            <section id="about" class="section-about">
-                <div class="about u-padding-top">
-                    <h2 class="about__heading">
-                        <span>About Me</span>
-                    </h2>
-                    <div class="about__description">
-                        <p class="paragraph">I am a recent University graduate who wants to create or improve projects using Full Stack technologies.</p>
-                        <p class="paragraph">During my time in university, I had no clue on what kind of projects I liked to work on. When I finally hit my senior year, I took courses on <span class="text-modifier">Web Engineering</span> and Graphics. For my senior design project, I worked with a group of classmates to come up with a 3D video game using the Unreal Game Engine. I learned a lot on working with team members and working on tasks assigned by our team leader and reporting it to the professor. In the end, I had to make a choice and the choice I made was to work and focus more on <span class="text-modifier">Full Stack technologies</span>.</p>
+            <section id="about">
+                <div class="container">
+                    <div class="about">
+                        <div class="about-content">
+                            <h2 class="about-heading">
+                                About Me
+                                <hr class="line">
+                            </h2>
+                            <p class="about-1">I am a recent University graduate who wants to create or improve projects using Full Stack technologies.</p>
+                            <p class="about-2">During my time in university, I had no clue on what kind of projects I liked to work on. When I finally hit my senior year, I took courses on Web Engineering and Graphics. For my senior design project, I worked with a group of classmates to come up with a 3D video game using the Unreal Game Engine. I learned a lot on working with team members and working on tasks assigned by our team leader and reporting it to the professor. In the end, I had to make a choice and the choice I made was to work and focus more on Full Stack technologies.</p>
+                        </div>
+                        <div class="about-img">
+                            <img class="about__img" src="img/profile-pic.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
             <!--SKILLs-->
-            <section class="section-skills u-padding-top u-padding-bottom">
-                <h3 class="section-skills__title u-text-align-center">Skills</h3>
-                <div class="skillset">
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-html5"></use>
-                            </svg>
-                            HTML5
-                        </span>
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-css3"></use>
-                            </svg>
-                            CSS3
-                        </span>
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-javascript"></use>
-                            </svg>
-                            JavaScript(ES6+)
-                        </span>
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>
-                            </svg>
-                            NodeJS
-                        </span>
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-react"></use>
-                            </svg>
-                            ReactJS
-                        </span>
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-bootstrap"></use>
-                            </svg>
-                            Bootstrap 4
-                        </span>
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-java"></use>
-                            </svg>
-                            Java
-                        </span>
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-git"></use>
-                            </svg>
-                            Git
-                        </span>
-                        <span class="skillset__item">
-                            <svg class="skillset__icon">
-                                <use xlink:href="img/sprite.svg#icon-database"></use>
-                            </svg>
-                            MongoDB
-                        </span>
+            <section>
+                <div class="container">
+                    <div class="skills">
+                        <h3 class="skills-heading">
+                            Skills
+                        </h3>
+                        <hr class="line">
                     </div>
+                    <div class="skills-list">
+                        <div class="skills-box">
+                            <ion-icon class="skills-icon" name="logo-html5"></ion-icon>
+                            <ion-icon class="skills-icon" name="logo-css3"></ion-icon>
+                            <ion-icon class="skills-icon" name="logo-sass"></ion-icon>
+                            <ion-icon class="skills-icon" name="logo-javascript"></ion-icon>
+                            <ion-icon class="skills-icon" name="logo-react"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skills-box">
+                            <ion-icon class="skills-icon" name="cafe-outline"></ion-icon>
+                            <ion-icon class="skills-icon" name="git-branch-outline"></ion-icon>
+                            <ion-icon class="skills-icon" name="server-outline"></ion-icon>
+                            <ion-icon class="skills-icon" name="logo-nodejs"></ion-icon>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- PROJECTS -->
-            <section class="section-tech u-padding-bottom">
-                <h4 class="project-title">Projects</h4>
-                <div class="project-container">
-                    <div class="featured-project">
-                        <img src="img/first-website.png" alt="First website" class="featured-project__img">
-                        <div class="u-margin-left">
-                            <p class="featured-project__title">First Portfolio Website</p>
-                            <div class="featured-project__box">
-                                <p class="featured-project__description">This was my first portfolio website. I worked on the design. I built it to practice React.js and Bootstrap. In the end, I decided to build another one.</p>
+            <section id="projects">
+                <div class="container">
+                    <h4 class="projects-heading">
+                        Projects
+                        <hr class="projects-line">
+                    </h4>
+                    <div class="projects-container">
+                        <div class="projects-item">
+                            <div class="card">
+                                <a class="card-link" target="_blank" href="https://github.com/AlanGarc1a/CloudSystems">
+                                    <ion-icon class="card-icon" name="logo-github"></ion-icon>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">Cloud Systems</h3>
+                                    <p class="card-about">A landing page for a fictional cloud computing company.</p>
+                                    <ul class="card-list">
+                                        <li class="card-item">HTML5</li>
+                                        <li class="card-item">CSS3(Sass)</li>
+                                        <li class="card-item">JavaScript</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <ul class="featured-project__list">
-                                <li class="featured-project__item">React.js</li>
-                                <li class="featured-project__item">Bootstrap 4</li> 
-                                <li class="featured-project__item"><a href="https://github.com/AlanGarc1a/Website" class="text-link" target="_blank">Github</a></li>
-                            </ul>
+                        </div>
+                        <div class="projects-item">
+                            <div class="card">
+                                <a class="card-link" target="_blank" href="https://github.com/AlanGarc1a/GameHub">
+                                    <ion-icon class="card-icon" name="logo-github"></ion-icon>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">GameHub</h3>
+                                    <p class="card-about">A MERN stack project where users can store their favorite games. Project is still in development.</p>
+                                    <ul class="card-list">
+                                        <li class="card-item">React.js</li>
+                                        <li class="card-item">Node.js</li>
+                                        <li class="card-item">Express.js</li>
+                                        <li class="card-item">MongoDB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-item">
+                            <div class="card">
+                                <a class="card-link" target="_blank" href="https://github.com/AlanGarc1a/Crazy-Time-Traveler">
+                                    <ion-icon class="card-icon" name="logo-github"></ion-icon>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">Crazy-Time-Traveler</h3>
+                                    <p class="card-about">A 2D game built using Java and libgdx where players dodge oncoming planes</p>
+                                    <ul class="card-list">
+                                        <li class="card-item">Java</li>
+                                        <li class="card-item">Libgdx</li>
+                                        <li class="card-item">Intellij</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="featured-project u-margin-top">
-                        <div class="u-margin-left second-project">
-                            <p class="featured-project__title">Instagram Web UI Clone</p>
-                            <div class="featured-project__box">
-                                <p class="featured-project__description">
-                                    Front-end clone of Instagram's Web UI built with HTML5, CSS3, and Bootstrap 5.
-                                    Focuses on just the fornt-end.
-                                </p>
-                            </div>
-                            <ul class="featured-project__list">
-                                <li class="featured-project__item">HTML5</li>
-                                <li class="featured-project__item">CSS3</li>
-                                <li class="featured-project__item">Bootstrap 5</li> 
-                                <li class="featured-project__item"><a href="https://github.com/AlanGarc1a/InstaClone" class="text-link" target="_blank">Github</a></li>
-                            </ul>
-                        </div>
-                        <img src="img/instaclone.png" alt="instagram clone" class="featured-project__img">
-                    </div>
-                    <div class="featured-project u-margin-top">
-                        <img src="img/CTTPic.png" alt="Crazy-Time-Traveler" class="featured-project__img">
-                        <div class="u-margin-left second-project">
-                            <p class="featured-project__title">Crazy-time-Traveler</p>
-                            <div class="featured-project__box">
-                                <p class="featured-project__description">This is a simple 2D platformer game where the user dodges objects coming from the right. I came up with the requirements of the game and design. I worked with a pixel artist so that he can come up with pixel art. I used Java, Android Studio, and a library called LibGDX to handle the rendering and textures of the game.</p>
-                            </div>
-                            <ul class="featured-project__list">
-                                <li class="featured-project__item">Java</li>
-                                <li class="featured-project__item">LibGdx</li>
-                                <li class="featured-project__item"><a href="https://github.com/AlanGarc1a/Crazy-Time-Traveler" class="text-link" target="_blank">Github</a></li> 
-                            </ul>
-                        </div>
+                    <div class="projects-btn">
+                        <a class="btn btn-projects" href="https://github.com/AlanGarc1a" target="_blank">Github</a>
                     </div>
                 </div>
             </section>
             <!--CONTACT -->
-            <section class="section-contact">
-                <div class="info">
-                    <h5 class="info__heading">Contact Me</h5>
-                    <p class="info__paragraph">I am looking for new opportunities to join a great place with a great set of people. Please send an email if interested.</p>
-                </div>
-                <div class="info__emailbox">
-                    <a class="info__emaillink" href="mailto:alangarcia2096@gmail.com" >Send Email</a>
-                </div>
-
-                <hr>
-
-                <div class="social-list">
-                    <ul class="social-list">
-                        <li class="social-list__item">
-                            <a href="https://www.linkedin.com/in/alan-garcia-4b1062197/" target="_blank" class="social-list__link">
-                                <svg class="social-list__icon">
-                                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-                                </svg>
-                                Linkedin
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="https://www.instagram.com/alang4rci4/" target="_blank" class="social-list__link">
-                                <svg class="social-list__icon">
-                                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                                </svg>
-                                Instagram
-                            </a>
-                        </li>
-                    </ul>
+            <section>
+                <div class="container">
+                    <div class="info">
+                        <h5 class="info__heading">Contact Me</h5>
+                        <p class="info__paragraph">I am looking for new opportunities to join a great place with a great set of people. Please send an email if interested.</p>
+                    </div>
+                    <div class="info-email">
+                        <a class="btn" href="mailto:alangarcia2096@gmail.com" >Send Email</a>
+                    </div>
                 </div>
             </section>
         </main>
