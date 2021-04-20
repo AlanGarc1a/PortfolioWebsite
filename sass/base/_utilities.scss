@@ -1,23 +1,8 @@
-.u-padding-top {
-    padding-top: 20rem;
+.u-fadeIn {
+    opacity: 0;
+    transition: all 250ms ease-in;
 }
 
-.u-padding-bottom {
-    padding-bottom: 10rem;
-}
-
-.u-margin-top {
-    margin-top: 7.5rem;
-}
-
-.u-margin-left {
-    margin-left: 10rem;
-}
-
-.u-margin-bottom {
-    margin-bottom: 10rem;
-}
-
-.u-text-align-center {
-    text-align: center;
+.u-fade-in-appear {
+    opacity: 1;
 }
