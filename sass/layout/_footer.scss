@@ -1,5 +1,4 @@
 .footer {
-    background-color: $color-secondary;
     display: flex;
     justify-content: center;
 
@@ -16,7 +15,7 @@
 
     &__quote {
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 300;
         color: $color-white;
 
         @include respond(phone) {
@@ -26,7 +25,7 @@
     }
     
     &__copyright {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         font-weight: 500;
         color: $color-white;
         display: flex;

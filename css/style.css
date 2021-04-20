@@ -255,7 +255,7 @@ body {
 
 .footer-box__quote {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 300;
   color: #fff; }
   @media only screen and (max-width: 37.5em) {
     .footer-box__quote {
@@ -263,7 +263,7 @@ body {
       padding: 1rem 1rem; } }
 
 .footer-box__copyright {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #fff;
   display: flex;
