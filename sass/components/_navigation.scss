@@ -31,11 +31,7 @@
         }
     }
 
-    @include respond(tab-port) {
-        display: none;
-    }
-
-    @include respond(tab-land) {
+    @include respond(phone) {
         display: none;
     }
 }
@@ -55,11 +51,7 @@
     cursor: pointer;
     display: none;
 
-    @include respond(tab-port) {
-        display: block;
-    }
-
-    @include respond(tab-land) {
+    @include respond(phone) {
         display: block;
     }
 }
