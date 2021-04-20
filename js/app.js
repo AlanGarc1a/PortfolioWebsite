@@ -99,6 +99,36 @@ const tick = () => {
 
 tick();
 
+//the areas we want the intersection to observe
+const sections = document.querySelectorAll('.u-fadeIn');
+
+//fade in when enter sections
+const options = {
+    threshold: 0.50,
+    rootMargin: '0px 0px -125px 0px'
+};
+
+//callback for the sections
+let sectionsFadeIn = (entries, observer) => {
+    entries.forEach( entry => {
+        if(!entry.isIntersecting){
+            return;
+        }
+        else {
+            entry.target.classList.toggle('u-fade-in-appear');
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+//observer for the sections
+let observer = new IntersectionObserver(sectionsFadeIn, options);
+
+//collection of sections
+sections.forEach( section => {
+    observer.observe(section); //elements to be watched
+});
+
 //burger event listener
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {
