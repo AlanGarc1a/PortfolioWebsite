@@ -173,12 +173,22 @@ section {
             flex-direction: column;
         }
 
+        @include respond(phone) {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
     }
 
     &-item {
         margin-right: .5rem;
 
         @include respond(tab-port) {
+            margin-bottom: 3rem;
+        }
+
+        @include respond(phone) {
             margin-bottom: 3rem;
         }
     }
@@ -248,7 +258,7 @@ section {
         }
 
         @include respond(phone) {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 500;
         }
     }

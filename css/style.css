@@ -406,10 +406,18 @@ section {
       justify-content: center;
       align-items: center;
       flex-direction: column; } }
+  @media only screen and (max-width: 37.5em) {
+    .projects-container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
 
 .projects-item {
   margin-right: .5rem; }
   @media only screen and (max-width: 56.25em) {
+    .projects-item {
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
     .projects-item {
       margin-bottom: 3rem; } }
 
@@ -464,7 +472,7 @@ section {
         width: 50%; } }
     @media only screen and (max-width: 37.5em) {
       .info__paragraph {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 500; } }
 
 .contact {
