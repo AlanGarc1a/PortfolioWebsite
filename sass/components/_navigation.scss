@@ -26,19 +26,43 @@
     &__item {
         margin-right: 3rem;
 
+        @include respond(phone) {
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
+
         &:last-child {
             margin-right: 0rem;
         }
     }
 
     @include respond(phone) {
-        display: none;
+        position: absolute;
+        top: 15rem;
+        left: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background-color: $color-dark-grey;
+        transform: translateX(150%);
+        transition: transform 0.4s ease-in;
     }
+}
+
+.nav-active {
+    transform: translateX(0);
 }
 
 .nav-link {
     font-size: 1.6rem;
     text-decoration: none;
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:link,
     &:visited {
