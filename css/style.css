@@ -59,6 +59,9 @@ body {
 .u-fade-in-appear {
   opacity: 1; }
 
+.u-body-hidden {
+  overflow: hidden; }
+
 .btn {
   border: 1px solid #eeeeee;
   border-radius: .5rem; }
@@ -157,15 +160,36 @@ body {
   list-style-type: none; }
   .nav-list__item {
     margin-right: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .nav-list__item {
+        margin-right: 0;
+        margin-bottom: 3rem; } }
     .nav-list__item:last-child {
       margin-right: 0rem; }
   @media only screen and (max-width: 37.5em) {
     .nav-list {
-      display: none; } }
+      position: absolute;
+      top: 15rem;
+      left: 10%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      width: 100%;
+      height: 100vh;
+      background-color: #393e46;
+      transform: translateX(150%);
+      transition: transform 0.4s ease-in; } }
+
+.nav-active {
+  transform: translateX(0); }
 
 .nav-link {
   font-size: 1.6rem;
   text-decoration: none; }
+  @media only screen and (max-width: 37.5em) {
+    .nav-link {
+      font-size: 2.5rem; } }
   .nav-link:link, .nav-link:visited {
     color: #fff; }
 
@@ -244,6 +268,11 @@ body {
     .footer-box__quote {
       font-size: 2rem;
       padding: 1rem 1rem; } }
+  .footer-box__quote--name {
+    text-align: center;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.8rem; }
 
 .footer-box__copyright {
   font-size: 1.5rem;
@@ -262,6 +291,9 @@ body {
 section {
   padding-top: 20rem;
   padding-bottom: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    section {
+      padding-top: 15rem; } }
 
 .social {
   display: block; }
@@ -397,6 +429,9 @@ section {
   @media only screen and (max-width: 56.25em) {
     .projects-btn {
       left: 45%; } }
+  @media only screen and (max-width: 37.5em) {
+    .projects-btn {
+      left: 42%; } }
 
 .info {
   display: flex;
@@ -415,6 +450,9 @@ section {
     @media only screen and (max-width: 56.25em) {
       .info-email {
         left: 43%; } }
+    @media only screen and (max-width: 37.5em) {
+      .info-email {
+        left: 40%; } }
   .info__heading {
     font-size: 4rem;
     font-weight: 700;
@@ -433,3 +471,20 @@ section {
     @media only screen and (max-width: 56.25em) {
       .info__paragraph {
         width: 50%; } }
+
+.contact {
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .contact {
+      display: block; } }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem; }
+  .contact-link {
+    margin-right: 2.4rem; }
+  .contact-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #eeeeee; }
