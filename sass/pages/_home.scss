@@ -193,7 +193,7 @@ section {
         }
 
         @include respond(phone) {
-            left: 42%;
+            left: 41%;
         }
     }
 }
@@ -220,7 +220,7 @@ section {
         }
 
         @include respond(phone) {
-            left: 40%;
+            left: 37%;
         }
     }
 
@@ -246,6 +246,11 @@ section {
         @include respond(tab-port) {
             width: 50%;
         }
+
+        @include respond(phone) {
+            font-size: 2rem;
+            font-weight: 500;
+        }
     }
 }
 
@@ -254,6 +259,7 @@ section {
 
     @include respond(phone) {
         display: block;
+        margin-left: 1.2rem;
     }
 
     &-list {
