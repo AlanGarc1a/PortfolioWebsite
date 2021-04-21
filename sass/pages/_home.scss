@@ -1,11 +1,15 @@
 section {
     padding-top: 20rem;
     padding-bottom: 10rem;
+
+    @include respond(phone) {
+        padding-top: 15rem;
+    }
 }
 
 .social {
     display: block;
-
+    
     @include respond(tab-port) {
         display: none;
     }
@@ -187,6 +191,10 @@ section {
         @include respond(tab-port) {
             left: 45%;
         }
+
+        @include respond(phone) {
+            left: 42%;
+        }
     }
 }
 
@@ -209,6 +217,10 @@ section {
 
         @include respond(tab-port) {
             left: 43%;
+        }
+
+        @include respond(phone) {
+            left: 40%;
         }
     }
 
@@ -234,5 +246,30 @@ section {
         @include respond(tab-port) {
             width: 50%;
         }
+    }
+}
+
+.contact {
+    display: none;
+
+    @include respond(phone) {
+        display: block;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    &-link {
+        margin-right: 2.4rem;
+    }
+
+    &-icon {
+        width: 3rem;
+        height: 3rem;
+        color: $color-light-grey;
     }
 }
