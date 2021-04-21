@@ -19,8 +19,7 @@
         color: $color-white;
 
         @include respond(phone) {
-            font-size: 2rem;
-            padding: 1rem 1rem;
+            font-size: 1.9rem;
         }
 
         &--name {
