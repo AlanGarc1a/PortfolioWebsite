@@ -129,8 +129,19 @@ sections.forEach( section => {
     observer.observe(section); //elements to be watched
 });
 
-//burger event listener
-const burger = document.querySelector('.burger');
-burger.addEventListener('click', () => {
-    burger.classList.toggle('toggle');
-});
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-list');
+    const body = document.querySelector('body');
+
+    //burger event listener
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+
+        //burger animation
+        burger.classList.toggle('toggle');
+    });
+}
+
+navSlide();
