@@ -2,7 +2,7 @@
     Alan Garcia
 </h3>
 
-![site image](/img/image.png?raw=true)
+![site image](https:/github.com/AlanGarc1a/PortfolioWebsite/main/img/image.png?raw=true)
 
 # PortfolioWebsite
 
