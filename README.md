@@ -1,3 +1,9 @@
+<p align="center">
+    Alan Garcia
+</p>
+
+![site image](/site/image.png)
+
 # PortfolioWebsite
 
 A portfolio website that was design and made using HTML5, CSS3(Sass), and JavaScript. I also included the THREE.js library to use particles.
@@ -18,3 +24,4 @@ Built with:
 # Tasks
 
 - [x] Make the site look better on mobile devices. 
+- [ ] Fix issue with project section not showing up on smartphone device.
