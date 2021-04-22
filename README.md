@@ -2,7 +2,7 @@
     Alan Garcia
 </h3>
 
-![site image](/img/image.png)
+![site image](/img/image.png?raw=true)
 
 # PortfolioWebsite
 
