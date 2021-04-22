@@ -1,8 +1,8 @@
-<p align="center">
+<h3 align="center">
     Alan Garcia
-</p>
+</h3>
 
-![site image](/site/image.png)
+![site image](/img/image.png)
 
 # PortfolioWebsite
 
