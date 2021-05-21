@@ -30,6 +30,16 @@
         width: 3.5rem;
     }
 
+    &-website {
+        position: absolute;
+        cursor: pointer;
+        top: 5%;
+        right: 10%;
+        left: 80%;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
     &-link {
         &:visited,
         &:link {
