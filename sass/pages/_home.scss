@@ -56,13 +56,6 @@ section {
         flex-basis: 50%;
     }
 
-    &-heading {
-        font-size: 3rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        color: $color-light-grey;
-    }
-
     &-line {
         display: inline-block;
         height: .4rem;
@@ -111,19 +104,40 @@ section {
     }
 }
 
+//EDUCATION
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+
+        &__heading {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 300;
+            color: $color-light-grey;
+        }
+
+        &__sub {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-top: 4rem;
+            color: $color-light-grey;
+        }
+    }
+}
+
 //SKILLS
 .skills {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    &-heading {
-        font-size: 3rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        margin-right: 1rem;
-        color: $color-light-grey;
-    }
 
     &-box {
         padding-bottom: 4rem;
