@@ -38,6 +38,13 @@ body {
   background-color: #eeeeee;
   color: #222831; }
 
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  color: #eeeeee; }
+
 .u-fadeIn {
   opacity: 0;
   transition: all 250ms ease-in; }
@@ -327,11 +334,6 @@ section {
       flex-direction: column; } }
   .about-content {
     flex-basis: 50%; }
-  .about-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: #eeeeee; }
   .about-line {
     display: inline-block;
     height: .4rem;
@@ -367,16 +369,31 @@ section {
       opacity: 1;
       transition: opacity .2s ease-in; }
 
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .education-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem; }
+    .education-content__heading {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 300;
+      color: #eeeeee; }
+    .education-content__sub {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 4rem;
+      color: #eeeeee; }
+
 .skills {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .skills-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    margin-right: 1rem;
-    color: #eeeeee; }
   .skills-box {
     padding-bottom: 4rem; }
   .skills-icon {
