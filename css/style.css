@@ -87,6 +87,14 @@ body {
     left: 90%;
     height: 3.5rem;
     width: 3.5rem; }
+  .card-website {
+    position: absolute;
+    cursor: pointer;
+    top: 5%;
+    right: 10%;
+    left: 80%;
+    height: 3.5rem;
+    width: 3.5rem; }
   .card-link:visited, .card-link:link {
     color: #222831; }
   .card-title {
