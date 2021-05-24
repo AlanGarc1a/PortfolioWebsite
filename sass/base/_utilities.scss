@@ -6,3 +6,19 @@
 .u-fade-in-appear {
     opacity: 1;
 }
+
+.u-bg-light {
+    background-color: $color-light-grey !important;
+}
+
+.u-light-theme {
+    color: $color-light-grey !important;
+}
+
+.u-dark-theme {
+    color: $bg-color-primary !important;
+}
+
+.u-bg-dark {
+    background-color: $bg-color-primary !important;
+}

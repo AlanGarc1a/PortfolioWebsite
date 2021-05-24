@@ -160,26 +160,15 @@ section {
 
 //projects
 .projects {
-    &-heading {
-        font-size: 3rem;
-        text-align: center;
-        color: $color-light-grey;
-        margin-right: 1rem;
-        margin-bottom: 10rem;
-    }
-
-    &-line {
-        display: inline-block;
-        height: .2rem;
-        background-color: $color-light-grey;
-        width: 10%;
-        margin-bottom: .3rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &-container {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        margin-top: 4rem;
 
         @include respond(tab-port) {
             justify-content: center;
@@ -244,18 +233,7 @@ section {
         }
 
         @include respond(phone) {
-            left: 37%;
-        }
-    }
-
-    &__heading {
-        font-size: 4rem;
-        font-weight: 700;
-        color: $color-light-grey;
-        margin-bottom: 5rem;
-
-        @include respond(tab-port){
-            margin-bottom: 5rem;
+            left: 39%;
         }
     }
 
