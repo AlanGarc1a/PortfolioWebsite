@@ -324,6 +324,9 @@ section {
   @media only screen and (max-width: 56.25em) {
     .social {
       display: none; } }
+  @media only screen and (max-width: 75em) {
+    .social {
+      display: none; } }
   .social-container {
     position: fixed;
     left: 8rem;
@@ -331,7 +334,7 @@ section {
     width: 4rem; }
     @media only screen and (max-width: 75em) {
       .social-container {
-        left: 4rem; } }
+        display: none; } }
   .social-list {
     display: flex;
     flex-direction: column; }
@@ -450,14 +453,20 @@ section {
     @media only screen and (max-width: 56.25em) {
       .projects-item {
         margin-bottom: 3rem; } }
+    @media only screen and (max-width: 75em) {
+      .projects-item {
+        margin-top: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .projects-item {
         margin-bottom: 3rem; } }
   .projects-btn {
     position: absolute;
-    left: 48%;
+    left: 47.5%;
     margin-top: 10rem; }
     @media only screen and (max-width: 56.25em) {
+      .projects-btn {
+        left: 45%; } }
+    @media only screen and (max-width: 75em) {
       .projects-btn {
         left: 45%; } }
     @media only screen and (max-width: 37.5em) {
@@ -481,6 +490,9 @@ section {
     @media only screen and (max-width: 56.25em) {
       .info-email {
         left: 43%; } }
+    @media only screen and (max-width: 75em) {
+      .info-email {
+        left: 44%; } }
     @media only screen and (max-width: 37.5em) {
       .info-email {
         left: 39%; } }
