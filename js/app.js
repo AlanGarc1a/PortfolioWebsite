@@ -168,6 +168,7 @@ const aboutImg = document.querySelector('.about-img');
 const cardContent = document.querySelectorAll('.card-content');
 const cardLinks = document.querySelectorAll('.card-link');
 const cardTitle = document.querySelectorAll('.card-title');
+const skillNames = document.querySelectorAll('.skills-name');
 
 contrast.addEventListener('click', () => {
     
@@ -251,6 +252,15 @@ contrast.addEventListener('click', () => {
         }
         else {
             cardLinks[i].classList.remove('u-light-theme');
+        }
+    }
+
+    for(let i = 0; i < skillNames.length; i++) {
+        if(!skillNames[i].classList.contains('u-dark-theme')){
+            skillNames[i].classList.toggle('u-dark-theme');
+        }
+        else {
+            skillNames[i].classList.remove('u-dark-theme');
         }
     }
 
