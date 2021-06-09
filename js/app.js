@@ -285,3 +285,20 @@ contrast.addEventListener('click', () => {
     }
 
 });
+
+//change sub heading
+let subHeading = document.querySelector('.heading__bottom');
+const jobs = ['Front End Engineer', 'Full Stack Novice', 'Traveler', 'Investor'];
+let counter = 0;
+
+function changeSubHeading() {
+    counter++;
+    subHeading.textContent = jobs[counter];
+
+    if(counter >= jobs.length) {
+        counter = 0;
+        subHeading.textContent = jobs[counter];
+    }
+}
+
+setInterval(changeSubHeading, 2000);
