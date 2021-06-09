@@ -418,16 +418,23 @@ section {
   .skills-box {
     padding-bottom: 4rem; }
   .skills-icon {
-    width: 4.4rem;
+    width: 4rem;
     height: 4.4rem;
     color: #eeeeee;
-    margin-right: 2.5rem; }
+    margin-bottom: 1rem; }
+  .skills-name {
+    font-size: 1.4rem;
+    color: #eeeeee; }
+
+.skill {
+  margin-right: 3rem; }
 
 .skills-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 4rem; }
 
 .projects {
   display: flex;

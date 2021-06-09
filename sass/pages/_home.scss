@@ -148,11 +148,20 @@ section {
     }
     
     &-icon {
-        width: 4.4rem;
+        width: 4rem;
         height: 4.4rem;
         color: $color-light-grey;
-        margin-right: 2.5rem;
+        margin-bottom: 1rem;
     }
+
+    &-name {
+        font-size: 1.4rem;
+        color: $color-light-grey;
+    }
+}
+
+.skill {
+    margin-right: 3rem;
 }
 
 .skills-list {
@@ -160,6 +169,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
 //projects
